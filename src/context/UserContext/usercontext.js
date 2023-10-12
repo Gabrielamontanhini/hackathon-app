@@ -1,9 +1,10 @@
+import AsyncStorage from "@react-native-async-storage/async-storage"
 import { createContext, useState } from "react";
 
-export const UserContext = createContext()
+ const UserContext = createContext()
 
-export default function UserProvider({ children }) {
-const lsSessao = JSON.parse(localStorage.getItem("sessao"))
+  function UserProvider({ children }) {
+const lsSessao = JSON.parse(AsyncStorage.getItem("sessao"))
     const [sessao, setSessao] = useState(lsSessao)
     return (
         <UserContext.Provider value={{ sessao, setSessao }}>
