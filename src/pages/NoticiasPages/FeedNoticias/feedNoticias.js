@@ -10,7 +10,6 @@ export default function FeedNoticias({ navigation }) {
 
     return (
         <StyledSafeArea>
-            <BigHeader />
             <FlatList
                 data={notices}
                 keyExtractor={(noticia) => String(noticia.id)}
