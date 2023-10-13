@@ -11,7 +11,7 @@ flex-direction: column;
 align-items: center;
 justify-content: space-evenly;
 box-sizing: border-box;
-border: 2px solid ${colors.secondColor};
+border: 2px solid ${colors.bordersColor};
 border-radius: 10px;
 margin-top: 15px;
 background-color: ${colors.firstColor};

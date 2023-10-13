@@ -11,6 +11,7 @@ export default function Inicial({ navigation }) {
     return (
         <StyledSafeArea>
             <BigHeader />
+
             <OptionsView>
                 <InicialText>
                     <Texto>O Aplicativo ABC++ tem como objetivo unir os produtores de culturas da Amazonia com as práticas de agricultura
@@ -22,6 +23,7 @@ export default function Inicial({ navigation }) {
                     </Texto>
                 </InicialText>
             </OptionsView>
+
 
             <TouchableOpacity onPress={() => navigation.navigate('areadoagricultor')}>
                 <Card data={{ label: 'Área do Agricultor' }} />
