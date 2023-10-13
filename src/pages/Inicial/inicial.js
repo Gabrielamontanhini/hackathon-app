@@ -21,7 +21,6 @@ export default function Inicial({ navigation }) {
 
 
 
-
          
         </StyledSafeArea>
     )
