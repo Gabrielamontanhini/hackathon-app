@@ -45,6 +45,8 @@ position:absolute;
 backgroundColor: ${colors.nonSelectedIcon};
 align-items:center;
 justify-content:center;
+border: 4px solid ${colors.borderIconColor}
+
 `
 
 export const CulturasContainerContainer = styled.ScrollView`

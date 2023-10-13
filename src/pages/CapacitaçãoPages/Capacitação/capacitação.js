@@ -1,8 +1,4 @@
 import { Button, Text, View } from "react-native";
-import Bottom from "../../../components/BottomComponent/bottom";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { api } from "../../../constants/api/api";
 import { FlatList } from "react-native-gesture-handler";
 import styled from "styled-components";
 

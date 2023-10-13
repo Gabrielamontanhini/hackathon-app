@@ -1,6 +1,5 @@
 
 import { TinyHeader } from "../../../components/HeaderComponents/tinyHeader"
-import Bottom from "../../../components/BottomComponent/bottom"
 import { StyledSafeArea } from "../../../styles/styledSafeArea"
 import { Text, TouchableOpacity } from "react-native"
 import { OptionsView } from "../../../styles/styledOptions"
