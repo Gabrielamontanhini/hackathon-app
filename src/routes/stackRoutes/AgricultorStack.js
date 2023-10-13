@@ -1,8 +1,8 @@
 import { createStackNavigator } from "@react-navigation/stack";
-import Agricultor from "../../pages/AgricultorPages/AgricultorInicialPage/Agricultor";
-import { Notice } from "../../components/NoticeComponent/Notice";
-import Capacitação from "../../pages/CapacitaçãoPages/Capacitação/Capacitação";
-import MinhasCulturas from "../../pages/AgricultorPages/MinhasCulturasPage/MinhasCulturas";
+import Agricultor from "../../pages/AreaDoAgricultorPages/AgricultorInicialPage/agricultorinicial";
+import feedNoticias from "../../pages/NoticiasPages/FeedNoticias/feedNoticias";
+import Capacitação from "../../pages/CapacitaçãoPages/Capacitação/capacitação";
+import MinhasCulturas from "../../pages/AreaDoAgricultorPages/AgricultorCulturaPage/agricultorCultura";
 
 const Stack = createStackNavigator();
 
@@ -12,7 +12,7 @@ export const AreaDoAgricultorStack = () => {
         <Stack.Navigator>
           <Stack.Screen name="Inicial" component={Agricultor} />
           <Stack.Screen name="minhas culturas" component={MinhasCulturas} />
-          <Stack.Screen name="Noticias" component={Notice} />
+          <Stack.Screen name="Noticias" component={feedNoticias} />
           <Stack.Screen name="Capacitação" component={Capacitação} />
         </Stack.Navigator>
       );

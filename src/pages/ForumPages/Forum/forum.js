@@ -1,8 +1,8 @@
 import { Button, FlatList, Text, View } from "react-native";
-import { posts } from "../../constants/Posts/posts";
-import { Post } from "../../components/PostComponent/Post";
-import { StyledSafeArea } from "../../styles/styledSafeArea";
-import Bottom from "../../components/BottomComponent/bottom";
+import { posts } from "../../../constants/posts/posts";
+import { Post } from "../../../components/PostComponent/post";
+import { StyledSafeArea } from "../../../styles/styledSafeArea";
+import Bottom from "../../../components/BottomComponent/bottom";
 
 export default function Forum({ navigation }) {
     return (

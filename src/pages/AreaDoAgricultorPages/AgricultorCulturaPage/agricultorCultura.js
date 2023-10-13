@@ -4,7 +4,7 @@ import { OptionsView } from "../../../styles/styledOptions";
 import { StyledSafeArea } from "../../../styles/styledSafeArea";
 import Pratica from "../../../components/PraticaComponent/pratica";
 import Bottom from "../../../components/BottomComponent/bottom";
-
+import { Text } from "react-native";
 export default function Cultura({navigation}) {
     return (
         <StyledSafeArea>
