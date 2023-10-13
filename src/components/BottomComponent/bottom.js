@@ -2,7 +2,6 @@ import { Button } from "./styled"
 import { ButtomContainer } from "./styled"
 import { Text } from "react-native"
 export default Bottom = ({ navigation }) => {
-    console.log(navigation)
 
     return (
         <ButtomContainer>
