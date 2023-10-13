@@ -1,13 +1,16 @@
 
-import { TinyHeader } from "../../../components/HeaderComponents/tinyHeader";
 import { StyledSafeArea } from "../../../styles/styledSafeArea";
 import Bottom from "../../../components/BottomComponent/bottom";
-import { Text } from "react-native";
+import { MinhasCulturasContainer, MinhasCulturasTitle } from "../../../styles/MinhasCulturas";
+
 export default function Cultura({navigation}) {
     return (
         <StyledSafeArea>
-            <TinyHeader />
-            <Text>Minhas Cultura</Text>
+              <MinhasCulturasContainer>
+                 <MinhasCulturasTitle>
+                    <Text>Minhas Culturas</Text>
+                 </MinhasCulturasTitle>
+            </MinhasCulturasContainer>  
         <Bottom navigation={navigation} />
         </StyledSafeArea>
     )
