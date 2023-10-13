@@ -195,7 +195,7 @@ const praticaTeste = [
                                             <ComponenteDeTexto>Descrição: {item.practiceAdvantage[0].description}</ComponenteDeTexto>
                                           </ComponentizarDepois>} /> 
         </View>
-        <Bottom  navigation={navigation}/>
+      
         </>
     )
 }
