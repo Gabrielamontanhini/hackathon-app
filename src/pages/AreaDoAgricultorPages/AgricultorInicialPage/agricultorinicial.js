@@ -14,7 +14,7 @@ export default function Agricultor({ navigation }) {
             <Text>Olá Agricultore</Text>
             <OptionsView>
                <TouchableOpacity onPress={()=>{navigation.navigate("minhas culturas")}}>
-                    <Text>Minhas culturas</Text>
+                    <Text>Minhas teste </Text>
                </TouchableOpacity>
             </OptionsView>
 
