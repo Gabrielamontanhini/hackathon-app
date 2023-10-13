@@ -6,11 +6,12 @@ export function Notice({data}) {
     return (
         <StyledNotice>
             <StyledTitle>
-                <Text>{data.titulo}</Text>
+                <Text>{data.title}</Text>
             </StyledTitle>
             <StyledCall>
-                <Text> {data.chamada}</Text>
+                <Text> {data.text}</Text>
             </StyledCall>
+            <Text>Fontes: {data.source}</Text>
             
         </StyledNotice>
     )
