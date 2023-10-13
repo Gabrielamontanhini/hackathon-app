@@ -37,7 +37,7 @@ export default function Inicial({ navigation }) {
 
 
 
-            <Bottom navigation={navigation} />
+         
         </StyledSafeArea>
     )
 }

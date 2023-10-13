@@ -17,7 +17,7 @@ export default function Forum({ navigation }) {
                 renderItem={({ item }) => <Post data={item}/>} />
 
 
-          <Bottom navigation={navigation}/>
+         
         </StyledSafeArea>
     )
 }

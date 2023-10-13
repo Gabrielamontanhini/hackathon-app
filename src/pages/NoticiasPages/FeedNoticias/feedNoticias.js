@@ -14,7 +14,6 @@ export default function FeedNoticias({ navigation }) {
                 showsVerticalScrollIndicator={false}
                 renderItem={({ item }) => <Notice data={item}/>} />
             <Button title="Área do Agricultor" onPress={() => navigation.navigate('areadoagricultor')} />
-            <Bottom navigation={navigation}/>
         </StyledSafeArea>
     )
 }

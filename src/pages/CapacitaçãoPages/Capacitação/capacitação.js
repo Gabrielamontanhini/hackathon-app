@@ -9,7 +9,7 @@ export default function Capacitação({ navigation }) {
                 Capacitação
             </Text>
         </View>
-        <Bottom  navigation={navigation}/>
+      
         </>
     )
 }
