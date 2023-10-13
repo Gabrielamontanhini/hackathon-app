@@ -1,9 +1,8 @@
 import { Button, FlatList } from "react-native"
 import { notices } from "../../../constants/noticias/noticias"
-import { BigHeader } from "../../../components/HeaderComponents/bigHeader"
 import { StyledSafeArea } from "../../../styles/styledSafeArea"
 import { Notice } from "../../../components/NoticeComponent/notice"
-import Bottom from "../../../components/BottomComponent/bottom"
+
 
 export default function FeedNoticias({ navigation }) {
     return (
