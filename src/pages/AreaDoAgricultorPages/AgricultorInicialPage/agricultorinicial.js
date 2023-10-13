@@ -1,7 +1,5 @@
 
-import { TinyHeader } from "../../../components/HeadersComponents/TinyHeader"
-
-
+import { TinyHeader } from "../../../components/HeaderComponents/tinyHeader"
 import Bottom from "../../../components/BottomComponent/bottom"
 import { StyledSafeArea } from "../../../styles/styledSafeArea"
 import { Text, TouchableOpacity } from "react-native"

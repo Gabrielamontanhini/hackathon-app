@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../constants/Colors/colors";
+import { colors } from "../constants/colors/colors";
 
 export const OptionsView = styled.View`
 background-color: ${colors.secondColor};
