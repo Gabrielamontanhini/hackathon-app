@@ -1,30 +1,19 @@
-import { Button } from "./styled"
+import { MenuButton} from "./styled"
 import { ButtomContainer } from "./styled"
-import { Text } from "react-native"
-export default Bottom = ({ navigation }) => {
-
+import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome"
+import { faBars,faBookmark } from "@fortawesome/free-solid-svg-icons"
+export default Bottom = ({ navigation,selected = "menu" }) => {
     return (
         <ButtomContainer>
-
-            <Button
-                onPress={() => navigation.navigate('forum')}
-            >
-                <Text>
-                    Forum
-                </Text></Button>
-            <Button
-                onPress={() => navigation.navigate('areadoagricultor')}
-            >
-                <Text>
-                    Area do  agricultor
-                </Text></Button>
-            <Button
-                onPress={() => navigation.navigate('capacitação')}
-            >
-                <Text>
-                    capacitação
-                </Text></Button>
-
+            <MenuButton selected={selected === "menu"? true: false}
+                onPress={() => navigation.openDrawer()}
+            ><FontAwesomeIcon icon={faBars} size={"30px"} style={selected === "menu" ?{color:"white"}:{color:"black"}}/></MenuButton>
+            <MenuButton selected={selected === "salvos"? true: false}
+                onPress={() => navigation.navigate('minhas culturas')}
+            ><FontAwesomeIcon icon={faBookmark} size={"30px"} style={selected === "salvos" ?{color:"white"}:{color:"black"}}/></MenuButton>
+             <MenuButton selected={selected === "salvos"? true: false}
+                onPress={() => navigation.navigate('Área do Agricultor')}
+            ></MenuButton>
         </ButtomContainer >
     )
 }

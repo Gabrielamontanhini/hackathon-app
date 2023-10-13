@@ -9,7 +9,10 @@ const Stack = createStackNavigator();
 export const AreaDoAgricultorStack = () => {
 
     return (
-        <Stack.Navigator>
+        <Stack.Navigator
+        screenOptions={{
+          headerShown: true
+        }}>
           <Stack.Screen name="Inicial" component={Agricultor} />
           <Stack.Screen name="minhas culturas" component={MinhasCulturas} />
           <Stack.Screen name="Noticias" component={feedNoticias} />

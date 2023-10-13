@@ -6,8 +6,6 @@ import { Notice } from "../../../components/NoticeComponent/notice"
 import Bottom from "../../../components/BottomComponent/bottom"
 
 export default function FeedNoticias({ navigation }) {
-
-
     return (
         <StyledSafeArea>
             <FlatList
