@@ -10,14 +10,14 @@ export default function Cultura({ navigation }) {
     }
 
     const culturas = [
-        {name:"cultura"},
-        {name:"cultura"},
-        {name:"cultura"},
-        {name:"cultura"},
-        {name:"cultura"},
-        {name:"cultura"},
-        {name:"cultura"},
-        {name:"cultura"},
+        {id:1,name:"cultura"},
+        {id:2,name:"cultura"},
+        {id:3,name:"cultura"},
+        {id:4,name:"cultura"},
+        {id:5,name:"cultura"},
+        {id:6,name:"cultura"},
+        {id:7,name:"cultura"},
+        {id:8,name:"cultura"},
     ]
     return (
         <StyledSafeArea>
@@ -29,7 +29,7 @@ export default function Cultura({ navigation }) {
                 </MinhasCulturasTitle>
                <CulturasContainerContainer>
                {culturas.map((cultura)=>{
-                    return <Culturas data={cultura}/>
+                    return <Culturas key={cultura.id} data={cultura}/>
                 })}
                </CulturasContainerContainer>
             </MinhasCulturasContainer>
