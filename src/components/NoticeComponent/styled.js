@@ -53,4 +53,3 @@ export const TextFont = styled.Text`
     background-color: ${colors.nonSelectedIcon};
     border-radius: 0 0 25px 25px;
 `
-
