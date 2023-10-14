@@ -3,11 +3,21 @@ import { StyledSafeArea } from "../../styles/styledSafeArea";
 import { Card } from "../../components/CardComponent/card";
 import { TouchableOpacity } from "react-native";
 import styled from "styled-components";
+import { colors } from "../../constants/colors/colors.js";
 
 
 export default function Inicial({ navigation }) {
     return (
         <StyledSafeArea>
+            <LevelContainer>
+                <LevelWrapper>
+                    {/* <Image
+                        source={require('../../../assets/icones_gerais/exp_bar.svg')}
+                        style={StyleExpBar}
+                    /> */}
+                    <TextLevel>Lv. 00</TextLevel>
+                </LevelWrapper>
+            </LevelContainer>
             <ButtonsWrapper>
                 <TouchableOpacity onPress={() => navigation.navigate('areadoagricultor')}>
                     <Card icon={true} data={{ label: 'ÁREA DO AGRICULTOR' }} />
@@ -35,30 +45,42 @@ export default function Inicial({ navigation }) {
     )
 }
 
+// const StyleExpBar = styled.svg`
+//     width: 20px;
+//     height: 20px;
+// `
+
 const ButtonsWrapper = styled.View`
     padding-right: 35%;
+    margin-bottom:40%;
 `
 
-const InicialText = styled.View`
-    width: 90%;
-    height: fit-content;
-    display: flex;
-    align-self: center;
-    flex-direction: column;
-    justify-content: center;
+const LevelContainer = styled.View`
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 55%;
+    margin-bottom:10%;
+    flex-direction: row;
+    align-items: center;
 `
 
-const Texto = styled.Text`
-    font-size: 18px;
-    padding-top: 5%;
-    padding-bottom: 5%;
+const LevelWrapper = styled.View`
+    background-color: ${colors.nonSelectedIcon};
+    height:70px;
+    width: 150px;
+    border-radius:18px;
+    border: 4px solid ${colors.selectedIconColor};
+    border-bottom-width:10px;
+    padding-bottom: 5px;
+    padding-right: 8px;
 `
-const TouchablesStyled = styled.View`
-    width: 100%;
-    height: 330px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 5px;
-    padding-bottom: 55px;
+
+const TextLevel = styled.Text`
+    margin-top:auto;
+    text-align: right;
+    /* text-align: bottom; */
+    font-weight:700;
+    font-size:20px;
 `
