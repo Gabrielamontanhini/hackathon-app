@@ -9,13 +9,13 @@ export default function Inicial({ navigation }) {
     return (
         <StyledSafeArea>
             <TouchableOpacity onPress={() => navigation.navigate('areadoagricultor')}>
-                <Card data={{ label: 'Área do Agricultor' }} />
+                <Card icon={true} data={{ label: 'Área do Agricultor' }} />
             </TouchableOpacity>
             <TouchableOpacity onPress={() => navigation.navigate('noticias')}>
-                <Card data={{ label: 'Notícias' }} />
+                <Card icon={true} data={{ label: 'Notícias' }} />
             </TouchableOpacity>
             <TouchableOpacity onPress={() => navigation.navigate('capacitação')}>
-                <Card data={{ label: 'Capacitação' }} />
+                <Card icon={true} data={{ label: 'Capacitação' }} />
             </TouchableOpacity>
             <InicialBottomsContainer>
                 <InicialBottom>

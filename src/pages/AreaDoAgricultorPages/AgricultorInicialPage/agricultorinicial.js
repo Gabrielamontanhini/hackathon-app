@@ -1,21 +1,31 @@
 
-import { TinyHeader } from "../../../components/HeaderComponents/tinyHeader"
 import { StyledSafeArea } from "../../../styles/styledSafeArea"
-import { Text, TouchableOpacity } from "react-native"
-import { OptionsView } from "../../../styles/styledOptions"
+import {TouchableOpacity } from "react-native"
+import { Card } from "../../../components/CardComponent/card"
+import { InicialBottomsContainer,InicialBottom,InicialBottomText } from "../../../styles/Inicial"
 
 
 export default function Agricultor({ navigation }) {
-  
+
     return (
         <StyledSafeArea>
-            <TinyHeader />
-            <Text>Olá Agricultore</Text>
-            <OptionsView>
-               <TouchableOpacity onPress={()=>{navigation.navigate("minhas culturas")}}>
-                    <Text>Minhas teste </Text>
-               </TouchableOpacity>
-            </OptionsView>     
+
+            <TouchableOpacity onPress={() => { navigation.navigate("minhas culturas") }}>
+                <Card icon={false} data={{ label: "Minhas culturas" }}></Card>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => { navigation.navigate("salvos") }}>
+                <Card icon={false} data={{ label: "Salvos" }}></Card>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => { navigation.navigate("minhas culturas") }}>
+                <Card icon={false} data={{ label: "Minhas culturas" }}></Card>
+            </TouchableOpacity>
+            <InicialBottomsContainer width={"100px"}>
+                <InicialBottom>
+                    <InicialBottomText>
+                        Validar Cultura
+                    </InicialBottomText>
+                </InicialBottom>
+            </InicialBottomsContainer>
         </StyledSafeArea>
     )
 }
