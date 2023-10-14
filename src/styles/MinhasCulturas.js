@@ -64,7 +64,7 @@ export const CulturasContainerContainer = styled.ScrollView`
   height:100%;
   
 `
-export const CulturasContainer = styled.View`
+export const CulturasContainer = styled.TouchableOpacity`
   width: 80%;
   height: 65px;
   margin-top:20px;

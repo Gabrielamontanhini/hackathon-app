@@ -29,7 +29,7 @@ export default function Cultura({ navigation }) {
                 </MinhasCulturasTitle>
                 <CulturasContainerContainer>
                     {culturas.map((cultura) => (
-                        <Culturas key={cultura.id} data={cultura} />
+                        <Culturas navigation={navigation}  key={cultura.id} data={cultura} />
                     ))}
                 </CulturasContainerContainer>
             </MinhasCulturasContainer>

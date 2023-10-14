@@ -2,6 +2,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Agricultor from "../../pages/AreaDoAgricultorPages/AgricultorInicialPage/agricultorinicial";
 import MinhasCulturas from "../../pages/AreaDoAgricultorPages/AgricultorCulturaPage/agricultorCultura";
 import Salvos from "../../pages/SalvosPages/Salvos/salvos";
+import { CulturaPage } from "../../pages/cultura/cultura";
 
 const Stack = createStackNavigator();
 
@@ -14,6 +15,7 @@ export const AreaDoAgricultorStack = () => {
           <Stack.Screen name="Area do Agricultor" component={Agricultor} />
           <Stack.Screen name="minhas culturas" component={MinhasCulturas} />
           <Stack.Screen name="salvos" component={Salvos} />
+          <Stack.Screen name="cultura" component={CulturaPage}/>
         </Stack.Navigator>
       );
 
