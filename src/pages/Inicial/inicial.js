@@ -15,9 +15,6 @@ export default function Inicial({ navigation }) {
                 <TouchableOpacity onPress={() => navigation.navigate('noticias')}>
                     <Card icon={true} data={{ label: 'NOTÍCIAS ABC+' }} />
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => navigation.navigate('capacitação')}>
-                    <Card icon={true} data={{ label: 'CAPACITACAO' }} />
-                </TouchableOpacity>
                 <TouchableOpacity onPress={() => navigation.navigate('forum')}>
                     <Card icon={true} data={{ label: 'FÓRUM' }} />
                 </TouchableOpacity>
