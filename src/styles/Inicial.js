@@ -15,10 +15,13 @@ export const InicialBottom = styled.TouchableOpacity`
     height:80px;
     border-radius:25px;
     border: 4px solid ${colors.borderIconColor};
-    border-bottom-width:8px;
+    border-bottom-width:10px;
     background-color: ${colors.selectedIconColor};
     justify-content:center;
+    padding: 10px;
+    padding-left: 20px;
 `
+
 export const InicialBottomText = styled.Text`
     text-align:center;
     color: ${colors.nonSelectedIcon};

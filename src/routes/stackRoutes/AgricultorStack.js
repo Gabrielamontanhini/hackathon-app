@@ -6,7 +6,6 @@ import Salvos from "../../pages/SalvosPages/Salvos/salvos";
 const Stack = createStackNavigator();
 
 export const AreaDoAgricultorStack = () => {
-
     return (
         <Stack.Navigator
         screenOptions={{
@@ -17,5 +16,5 @@ export const AreaDoAgricultorStack = () => {
           <Stack.Screen name="salvos" component={Salvos} />
         </Stack.Navigator>
       );
-    
+
 }
