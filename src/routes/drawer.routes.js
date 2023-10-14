@@ -5,6 +5,7 @@ import Forum from '../pages/ForumPages/Forum/forum';
 import { AreaDoAgricultorStack } from './stackRoutes/AgricultorStack';
 import { faHome, faPerson, faMailBulk, faExclamation } from '@fortawesome/free-solid-svg-icons';
 import { InicialStack } from './stackRoutes/home.stack';
+import { UserProvider } from '../context/UserContext/usercontext';
 const Drawer = createDrawerNavigator();
 
 export default function DrawerRoutes() {

@@ -1,7 +1,7 @@
 import axios from "axios";
 import config from "./config.js";
-
 function signin(body, success, failure) {
+
   axios
     .post(`${process.env.EXPO_PUBLIC_API_URL}/sign-in`, body)
     .then((res) => {
@@ -155,7 +155,8 @@ function getAllPractices(success, failure) {
     });
 }
 
-function createPractices(body, token, success, token) {
+
+function createPractices(body, token, success, failure) {
   axios
     .post(`${process.env.EXPO_PUBLIC_API_URL}/practices`, body, config(token))
     .then((res) => {
