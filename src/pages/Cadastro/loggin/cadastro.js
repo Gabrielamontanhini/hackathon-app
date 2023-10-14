@@ -31,7 +31,7 @@ export const Cadastro = ({navigation}) => {
             </MinhasCulturasContainer> : ""}
             <Bottom>
                 {passo==="nome"?<BackButton  onPress={()=>{navigation.goBack()}}><FontAwesomeIcon size={50}  icon={faCircleArrowLeft}/></BackButton>:""}
-                {passo==="email"?<BackButton  onPress={()=>{setPasso("nome")}}><FontAwesomeIcon size={50}  icon={faCircleArrowLeft}/></BackButton>:""}
+                {passo==="email"?<BackButton width={"100px"} height={"200px"}  onPress={()=>{setPasso("nome")}}><FontAwesomeIcon size={50}  icon={faCircleArrowLeft}/></BackButton>:""}
                 {passo==="senha"?<BackButton  onPress={()=>{setPasso("email")}}><FontAwesomeIcon size={50}  icon={faCircleArrowLeft}/></BackButton>:""}
                
                 {passo==="nome"?<InicialBottom onPress={()=>{setPasso("email")}}>

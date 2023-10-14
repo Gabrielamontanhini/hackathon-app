@@ -18,7 +18,7 @@ export default function Inicial({ navigation }) {
                 <Card icon={true} data={{ label: 'Capacitação' }} />
             </TouchableOpacity>
             <InicialBottomsContainer>
-                <InicialBottom>
+                <InicialBottom onPress={()=>navigation.navigate('login')}>
                     <InicialBottomText>
                         Entrar
                     </InicialBottomText>
