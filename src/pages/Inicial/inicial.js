@@ -23,7 +23,7 @@ export default function Inicial({ navigation }) {
                         Entrar
                     </InicialBottomText>
                 </InicialBottom>
-                <InicialBottom>
+                <InicialBottom onPress={()=>navigation.navigate('cadastro')}>
                     <InicialBottomText>
                         cadastrar
                     </InicialBottomText>

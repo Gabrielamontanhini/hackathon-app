@@ -6,4 +6,5 @@ const bordersColor = "white"
 const selectedIconColor = "black"
 const nonSelectedIcon = "white"
 const  borderIconColor = "black"
-export const colors = {firstColor, secondColor, thirdColor , fourthColor , bordersColor,selectedIconColor,nonSelectedIcon,borderIconColor}
+const inputColor = "gray"
+export const colors = {inputColor,firstColor, secondColor, thirdColor , fourthColor , bordersColor,selectedIconColor,nonSelectedIcon,borderIconColor}
