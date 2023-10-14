@@ -20,13 +20,14 @@ export const MinhasCulturasTitle = styled.View`
   width:100%;
   border-top-width: 4px;
  `
+
 export const MinhasCultusTitleText = styled.Text`
-  /* text-align: left; */
   text-align: center;
   font-size: 18px;
   font-weight: 700;
   margin: 15px;
- `
+`
+
 export const AdicionarCulturas = styled.View`
   width:100%;
   position:relative;
@@ -54,8 +55,8 @@ export const AdicionarCulturasButton = styled.TouchableOpacity`
   background-color: ${colors.nonSelectedIcon};
   align-items:center;
   justify-content:center;
-  border-bottom-width:14px;
-  border: 6px solid ${colors.borderIconColor};
+  border-bottom-width:12px;
+  border: 6px solid ${colors.selectedIconColor};
 
 `
 export const CulturasContainerContainer = styled.ScrollView`
@@ -72,6 +73,7 @@ export const CulturasContainer = styled.View`
   justify-content:center;
   margin: 20px auto 0 auto;
 `
+
 export const CulturaText = styled.Text`
   margin-left:25px;
   font-size: 18px;
