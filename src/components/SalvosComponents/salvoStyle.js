@@ -9,6 +9,7 @@ export const SalvosContainer = styled.View`
   margin: 10px auto 5px auto;
   padding: 15px;
 `
+
 export const SalvoText = styled.Text`
   font-size: 18px;
   font-weight:400;
