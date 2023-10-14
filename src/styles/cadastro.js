@@ -24,10 +24,14 @@ export const Bottom  =styled.View`
  align-items:center;
 `
 export const TextBottom = styled.Text`
-color:white;
+color:${(props)=>props.color?props.color:"white"};
 text-align:center;
 `
 
 export const BackButton = styled.TouchableOpacity`
-
+backgroundColor: ${colors.nonSelectedIcon};
+padding:10px;
+borderRadius:15px;
+border:4px solid ${colors.selectedIconColor};
+border-bottom-width:8px;
 `
