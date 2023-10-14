@@ -1,17 +1,15 @@
-import { Text } from "react-native";
-import { StyledCall, StyledNotice, StyledTitle } from "./styled";
+import { StyledCall, StyledNotice, StyledTitle, TextFont, TextHeader, TextP } from "./styled";
 
 export function Notice({ data }) {
-
     return (
         <StyledNotice>
             <StyledTitle>
-                <Text>{data.title}</Text>
+                <TextHeader>{data.title}</TextHeader>
             </StyledTitle>
             <StyledCall>
-                <Text> {data.text}</Text>
+                <TextP>{data.text}</TextP>
             </StyledCall>
-            <Text>Fontes: {data.source}</Text>
+            <TextFont>Fontes: {data.source}</TextFont>
         </StyledNotice>
     )
 }
