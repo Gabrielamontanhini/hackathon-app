@@ -1,13 +1,28 @@
-import AsyncStorage from "@react-native-async-storage/async-storage"
-import React , { createContext, useState } from "react";
+import {AsyncStorage} from "@react-native-async-storage/async-storage"
+import React, { createContext, useState } from "react";
+import { signin } from "../../services/api";
 
- const UserContext = createContext()
+export const UserContext = createContext()
 
-  function UserProvider({ children }) { //ESSA FUNÇÃO DEVE SER CHAMADA COMO FILHA DE NAVIGATION CONTAINER E DEVE ENGLOBAR ROUTES
-    const lsSessao = JSON.parse(AsyncStorage.getItem("sessao")) //PEGA O TOKEN NO STORAGE
-    const [sessao, setSessao] = useState(lsSessao) //USA O TOKEN
+export function UserProvider({ children }) {
+    const isLoged = async () => {
+        const lsSessao = (JSON.parse(AsyncStorage.getItem("sessao")))
+        if (lsSessao) {
+            return true
+        } else {
+            return false
+        }
+    }
+    const login = async (email, senha) => {
+        const token = signin({email, password:senha});
+        token ? JSON.stringify(AsyncStorage.setItem("sessao")) :"";
+    }
+
+    const cadastro = (name,nickname,email,senha) => {
+    }
+
     return (
-        <UserContext.Provider value={{ sessao, setSessao }}> 
+        <UserContext.Provider value={{ login,isLoged }}>
             {children}
         </UserContext.Provider>
     )

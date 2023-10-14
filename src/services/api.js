@@ -1,7 +1,7 @@
 import axios from "axios";
 import config from "./config.js";
 
-function signin(body) {
+export function signin(body) {
   return axios.post(`${process.env.EXPO_PUBLIC_API_URL}/sign-in`, body);
 }
 

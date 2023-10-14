@@ -2,11 +2,17 @@
 import { MinhasCulturasContainer } from "../../../styles/MinhasCulturas"
 import { StyledSafeArea } from "../../../styles/styledSafeArea"
 import { Bottom, Input, Label, Title, TextBottom, BackButton } from "../../../styles/cadastro"
-import { useState } from "react"
+import { useContext, useRef, useState } from "react"
 import { InicialBottom } from "../../../styles/Inicial"
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome"
 import { faArrowAltCircleLeft, faCircleArrowLeft } from "@fortawesome/free-solid-svg-icons"
+import { UserContext } from "../../../context/UserContext/usercontext"
 export const Cadastro = ({navigation}) => {
+    const {cadastro} =  useContext(UserContext)
+    const nomeRef = useRef()
+    const emailRef = useRef()
+    const senhaRef = useRef()
+    const nicknameRef = useRef()
     const [passo, setPasso] = useState("nome")
     return (
         <StyledSafeArea>
