@@ -73,10 +73,6 @@ function getForum(category) {
   return axios.get(`${process.env.EXPO_PUBLIC_API_URL}/forum/${category}`);
 }
 
-function getAllPractices() {
-  return axios.get(`${process.env.EXPO_PUBLIC_API_URL}/practices`);
-}
-
 function createPost(category, body, token) {
   return axios.post(`${process.env.EXPO_PUBLIC_API_URL}/posts/${category}`, body, config(token));
 }
