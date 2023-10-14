@@ -20,8 +20,8 @@ Com o cadastro do usuário, a associação de produtos ao usuário e a validaç�
 ## Quick start
 
 Instalando a demo do app.
-Clone o repositorio, instale as dependencias e rode o comando do Expo,
-Por fim leia o QR code gerado com o aplicativo do Expo no seu celular
+Clone o repositorio, instale as dependências e rode o comando do Expo,
+Por fim leia o QR code gerado com o aplicativo do Expo no seu celular.
 
 ```bash
 git clone https://github.com/Gabrielamontanhini/hackathon-app.git
