@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { colors } from "../constants/colors/colors";
 
 export const InicialBottomsContainer = styled.View`
-width: 250px;
+width: ${(props)=>props.width? props.width: "250px"};
 flex-direction:row;
 justifyContent:space-between;
 alignItens:center;
