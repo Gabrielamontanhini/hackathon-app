@@ -1,4 +1,4 @@
-import { CulturasContainer,CulturaText } from "../../styles/MinhasCulturas"
+import { CulturasContainer, CulturaText } from "../../styles/MinhasCulturas"
 
 export const Culturas = ({ data }) => {
     return (

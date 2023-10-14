@@ -11,7 +11,8 @@ export default function FeedNoticias({ navigation }) {
                 data={notices}
                 keyExtractor={(noticia) => String(noticia.id)}
                 showsVerticalScrollIndicator={false}
-                renderItem={({ item }) => <Notice data={item}/>} />
+                renderItem={({ item }) => <Notice data={item} />}
+            />
         </StyledSafeArea>
     )
 }

@@ -10,35 +10,35 @@ export default function Cultura({ navigation }) {
     }
 
     const culturas = [
-        {id:1,name:"cultura"},
-        {id:2,name:"cultura"},
-        {id:3,name:"cultura"},
-        {id:4,name:"cultura"},
-        {id:5,name:"cultura"},
-        {id:6,name:"cultura"},
-        {id:7,name:"cultura"},
-        {id:8,name:"cultura"},
+        { id: 1, name: "Cultura" },
+        { id: 2, name: "Cana de Açúcar" },
+        { id: 3, name: "Algodão" },
+        { id: 4, name: "cultura" },
+        { id: 5, name: "cultura" },
+        { id: 6, name: "cultura" },
+        { id: 7, name: "cultura" },
+        { id: 8, name: "cultura" },
     ]
     return (
         <StyledSafeArea>
             <MinhasCulturasContainer>
                 <MinhasCulturasTitle>
                     <MinhasCultusTitleText>
-                        Minhas Culturas
+                        MINHAS CULTURAS
                     </MinhasCultusTitleText>
                 </MinhasCulturasTitle>
-               <CulturasContainerContainer>
-               {culturas.map((cultura)=>{
-                    return <Culturas key={cultura.id} data={cultura}/>
-                })}
-               </CulturasContainerContainer>
+                <CulturasContainerContainer>
+                    {culturas.map((cultura) => (
+                        <Culturas key={cultura.id} data={cultura} />
+                    ))}
+                </CulturasContainerContainer>
             </MinhasCulturasContainer>
             <AdicionarCulturas >
                 <AdicionarMinhasCulturasText>
-                    Adicionar Cultura
+                    ADICIONAR CULTURA
                 </AdicionarMinhasCulturasText>
-                <AdicionarCulturasButton onPress={()=>{adicionarCultura()}}>
-                    <FontAwesomeIcon icon={faPlus} size={60}/>
+                <AdicionarCulturasButton onPress={() => { adicionarCultura() }}>
+                    <FontAwesomeIcon icon={faPlus} size={50} />
                 </AdicionarCulturasButton>
             </AdicionarCulturas>
         </StyledSafeArea>
