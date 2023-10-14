@@ -1,6 +1,6 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import Agricultor from "../../pages/AreaDoAgricultorPages/AgricultorInicialPage/agricultorinicial";
-import Capacitação from "../../pages/CapacitaçãoPages/Capacitação/capacitação";
+import Capacitacao from "../../pages/CapacitacaoPages/Capacitacao/capacitacao";
 import MinhasCulturas from "../../pages/AreaDoAgricultorPages/AgricultorCulturaPage/agricultorCultura";
 import Salvos from "../../pages/SalvosPages/Salvos/salvos";
 
@@ -16,7 +16,7 @@ export const AreaDoAgricultorStack = () => {
           <Stack.Screen name="Area do Agricultor" component={Agricultor} />
           <Stack.Screen name="minhas culturas" component={MinhasCulturas} />
           <Stack.Screen name="salvos" component={Salvos} />
-          <Stack.Screen name="Capacitação" component={Capacitação} />
+          <Stack.Screen name="Capacitação" component={Capacitacao} />
         </Stack.Navigator>
       );
     

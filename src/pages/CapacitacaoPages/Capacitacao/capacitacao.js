@@ -5,7 +5,7 @@ import styled from "styled-components";
 //TODO a pagina ira carregar corretamente uma flatlist de acordo com a lista recebida na api, no momento ela ja esta no compoentne
 
 
-export default function Capacitação({ navigation }) {
+export default function Capacitacao({ navigation }) {
   {/**   const [praticas, setPraticas]=useState([])
     useEffect(()=>{
         const carregarPraticas = axios.get(`${api}/practices`)
@@ -18,7 +18,7 @@ export default function Capacitação({ navigation }) {
     })*/}
 
 
-const praticaTeste = [
+  const praticaTeste = [
     {
       "id": 1,
       "name": "Rotação de Culturas",
@@ -175,25 +175,28 @@ const praticaTeste = [
     }
   ]
 
-    return (
-        <>
-        <View style={{alignItems:"center"}}>
-            <Text>
-                Capacitação: Conheça as práticas, suas vantagens e como aplicar
-            </Text>
-            <FlatList
-                data={praticaTeste}
-                keyExtractor={(pratica) => String(pratica.id)}
-                showsVerticalScrollIndicator={false}
-                renderItem={({ item }) => <ComponentizarDepois>
-                                            <TituloDaPratica>{item.name}</TituloDaPratica>
-                                            <ComponenteDeTexto>Vantagem: {item.practiceAdvantage[0].advantage}  </ComponenteDeTexto>
-                                            <ComponenteDeTexto>Descrição: {item.practiceAdvantage[0].description}</ComponenteDeTexto>
-                                          </ComponentizarDepois>} /> 
-        </View>
-      
-        </>
-    )
+  return (
+    <>
+      <View style={{ alignItems: "center" }}>
+        <Text>
+          Capacitação: Conheça as práticas, suas vantagens e como aplicar
+        </Text>
+        <FlatList
+          data={praticaTeste}
+          keyExtractor={(pratica) => String(pratica.id)}
+          showsVerticalScrollIndicator={false}
+          renderItem={({ item }) => (
+            <ComponentizarDepois>
+              <TituloDaPratica>{item.name}</TituloDaPratica>
+              <ComponenteDeTexto>Vantagem: {item.practiceAdvantage[0].advantage}  </ComponenteDeTexto>
+              <ComponenteDeTexto>Descrição: {item.practiceAdvantage[0].description}</ComponenteDeTexto>
+            </ComponentizarDepois>
+          )}
+        />
+      </View>
+
+    </>
+  )
 }
 
 const ComponentizarDepois = styled.View`

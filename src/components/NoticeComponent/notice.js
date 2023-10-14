@@ -1,8 +1,8 @@
 import { Text } from "react-native";
 import { StyledCall, StyledNotice, StyledTitle } from "./styled";
 
-export function Notice({data}) {
-   
+export function Notice({ data }) {
+
     return (
         <StyledNotice>
             <StyledTitle>
@@ -12,7 +12,6 @@ export function Notice({data}) {
                 <Text> {data.text}</Text>
             </StyledCall>
             <Text>Fontes: {data.source}</Text>
-            
         </StyledNotice>
     )
 }
