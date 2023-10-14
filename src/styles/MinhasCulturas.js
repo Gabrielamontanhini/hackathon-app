@@ -8,6 +8,7 @@ export const MinhasCulturasContainer  = styled.View`
   backgroundColor: ${colors.nonSelectedIcon};
   border: 4px solid ${colors.borderIconColor};
   border-radius: 28px;
+  border-top-width:0px;
   border-bottom-width: 17px;
   overflow: scroll;
   margin-top:20px;
@@ -16,6 +17,7 @@ export const MinhasCulturasContainer  = styled.View`
 export const MinhasCulturasTitle = styled.View`
  border-bottom-width: 4px;
  width:100%;
+ border-top-width: 4px;
  `
 export const MinhasCultusTitleText = styled.Text`
  text-align:center;

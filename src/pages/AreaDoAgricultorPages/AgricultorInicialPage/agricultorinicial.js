@@ -9,7 +9,6 @@ export default function Agricultor({ navigation }) {
 
     return (
         <StyledSafeArea>
-
             <TouchableOpacity onPress={() => { navigation.navigate("minhas culturas") }}>
                 <Card icon={false} data={{ label: "Minhas culturas" }}></Card>
             </TouchableOpacity>
