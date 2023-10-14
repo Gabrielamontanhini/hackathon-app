@@ -5,23 +5,32 @@ import { colors } from "../../constants/colors/colors";
 
 
 export const StyledCard = styled.View`
-min-width: 300px;
-height: 100px;
+
 box-sizing: border-box;
 border-radius: 10px;
 margin-top: 5px;
 margin-bottom: 5px;
-display: flex;
 flex-direction: row;
-justify-content: space-evenly;
 align-items: center;
-background-color: ${colors.thirdColor};
 `
-export const TitleCard = styled.Text`
- backgroundColor: ${colors.nonSelectedIcon};
- width:200px;
-
+export const TitleCard = styled.View`
+backgroundColor: ${colors.nonSelectedIcon};
+width:250px; 
+height:60px;
+borderRadius:18px;
+margin-top:15px;
+border: 4px solid ${colors.selectedIconColor};
+border-bottom-width:8px;
+`
+export const TitleCardText = styled.Text`
+margin:auto;
 `
 export const CardIcon = styled.View`
-
+margin-top:15px;
+height:55px;
+width: 55px;
+borderRadius:18px;
+justify-content:center;
+align-items:center;
+backgroundColor: ${colors.selectedIconColor}
 `

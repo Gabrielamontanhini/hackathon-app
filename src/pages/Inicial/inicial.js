@@ -1,27 +1,34 @@
-import { BigHeader } from "../../components/HeaderComponents/bigHeader";
+import { InicialBottom, InicialBottomText, InicialBottomsContainer } from "../../styles/Inicial";
 import { StyledSafeArea } from "../../styles/styledSafeArea";
 import { Card } from "../../components/CardComponent/card";
 import { TouchableOpacity } from "react-native";
-import { OptionsView } from "../../styles/styledOptions";
 import styled from "styled-components";
 
 
 export default function Inicial({ navigation }) {
     return (
         <StyledSafeArea>
-                <TouchableOpacity onPress={() => navigation.navigate('areadoagricultor')}>
-                    <Card data={{ label: 'Área do Agricultor' }} />
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => navigation.navigate('noticias')}>
-                    <Card data={{ label: 'Notícias' }} />
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => navigation.navigate('capacitação')}>
-                    <Card data={{ label: 'Capacitação' }} />
-                </TouchableOpacity>
-
-
-
-         
+            <TouchableOpacity onPress={() => navigation.navigate('areadoagricultor')}>
+                <Card data={{ label: 'Área do Agricultor' }} />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('noticias')}>
+                <Card data={{ label: 'Notícias' }} />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('capacitação')}>
+                <Card data={{ label: 'Capacitação' }} />
+            </TouchableOpacity>
+            <InicialBottomsContainer>
+                <InicialBottom>
+                    <InicialBottomText>
+                        Entrar
+                    </InicialBottomText>
+                </InicialBottom>
+                <InicialBottom>
+                    <InicialBottomText>
+                        cadastrar
+                    </InicialBottomText>
+                </InicialBottom>
+            </InicialBottomsContainer>
         </StyledSafeArea>
     )
 }
