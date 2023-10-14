@@ -45,7 +45,7 @@ const Header = styled.View`
 `
 
 const TextHeader = styled.Text`
-    color: ${colors.textSecondaryColor};
+    color: ${colors.nonSelectedIcon};
     font-size: 20px;
     font-weight: 600;
 `
@@ -61,5 +61,6 @@ const ValidationButton = styled(InicialBottomText)`
 `
 
 const ButtonValidationWrapper = styled(InicialBottom)`
-    width: 220px;
+    width: 240px;
+    padding: 0;
 `

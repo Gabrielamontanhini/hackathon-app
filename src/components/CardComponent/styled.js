@@ -17,7 +17,7 @@ export const TitleCard = styled.View`
     margin-top:15px;
     margin-right:15px;
     border: 4px solid ${colors.selectedIconColor};
-    border-bottom-width:8px;
+    border-bottom-width:10px;
     width: 100%;
 `
 export const TitleCardText = styled.Text`
@@ -34,5 +34,5 @@ export const CardIcon = styled.View`
     align-items:center;
     background-color: ${colors.selectedIconColor};
     border: 4px solid ${colors.borderIconColor};
-    border-bottom-width:8px;
+    border-bottom-width:10px;
 `
