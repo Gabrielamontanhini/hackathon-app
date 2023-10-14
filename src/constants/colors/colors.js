@@ -9,6 +9,7 @@ const borderIconColor = "#120D0D"
 const inputColor = "gray"
 const textSecondaryColor = "#CCC9B8"
 const backgroundSecondaryColor = "#CCC9B8"
+const backgroundTernatyColor = "#E8E2C1"
 
 export const colors = {
     inputColor,
@@ -21,5 +22,6 @@ export const colors = {
     nonSelectedIcon,
     borderIconColor,
     textSecondaryColor,
-    backgroundSecondaryColor
+    backgroundSecondaryColor,
+    backgroundTernatyColor
 }

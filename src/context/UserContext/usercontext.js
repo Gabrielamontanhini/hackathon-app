@@ -1,6 +1,6 @@
 import {AsyncStorage} from "@react-native-async-storage/async-storage"
 import React, { createContext, useState } from "react";
-import { signin } from "../../services/api";
+import api from "../../services/api";
 
 export const UserContext = createContext()
 
@@ -13,12 +13,25 @@ export function UserProvider({ children }) {
             return false
         }
     }
-    const login = async (email, senha) => {
-        const token = signin({email, password:senha});
-        token ? JSON.stringify(AsyncStorage.setItem("sessao")) :"";
+    const login = async (email, password) => {
+        function failure(err){
+            alert(err)
+        }
+        function success(data){
+         JSON.stringify(AsyncStorage.setItem("sessao",data.token));
+        }
+        api.signin({email,password},success,failure)
     }
 
     const cadastro = (name,nickname,email,senha) => {
+        function failure(err){
+            alert(err)
+        }
+        function success(data){
+            alert("sucesso")
+            console.log("sucesso")
+        }
+        api.signin({name,nickname,email,senha},success,failure)
     }
 
     return (

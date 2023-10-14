@@ -8,32 +8,38 @@ import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome"
 import { faArrowAltCircleLeft, faCircleArrowLeft } from "@fortawesome/free-solid-svg-icons"
 import { UserContext } from "../../../context/UserContext/usercontext"
 export const Cadastro = ({navigation}) => {
+
     const {cadastro} =  useContext(UserContext)
     const nomeRef = useRef()
     const emailRef = useRef()
     const senhaRef = useRef()
     const nicknameRef = useRef()
-    const [passo, setPasso] = useState("nome")
+    var passo = "nome"
+    function setPasso(passo){
+        passo = passo
+    }
+
+    const  cadastrar = () => {
+        cadastro(nomeRef.current.value,nicknameRef.current.value,emailRef.current.value,senhaRef.current.value)
+    }
     return (
         <StyledSafeArea>
             {passo === "nome" ? <MinhasCulturasContainer height={"250px"}>
                 <Title>Criação de Conta</Title>
                 <Label>Qual o seu nome ?</Label>
-                <Input defaultValue={"  ..."} />
+                <Input onChangeText={(e)=> nomeRef.current.value = e} ref={nomeRef} defaultValue={"  ..."} />
                 <Label>Como prefere  ser  Chamado ?</Label>
-                <Input defaultValue={"  ..."} />
+                <Input onChangeText={(e)=> nicknameRef.current.value = e} ref={nicknameRef} defaultValue={"  ..."} />
             </MinhasCulturasContainer> : ""}
             {passo === "email" ? <MinhasCulturasContainer height={"250px"}>
                 <Title>Criação de Conta</Title>
                 <Label>Qual o seu email ?</Label>
-                <Input defaultValue={"  ..."} />
+                <Input onChangeText={(e)=> emailRef.current.value = e} ref={emailRef} defaultValue={"  ..."} />
             </MinhasCulturasContainer> : ""}
             {passo === "senha" ? <MinhasCulturasContainer height={"250px"}>
                 <Title>Criação de Conta</Title>
-                <Label>crie uma senha </Label>
-                <Input defaultValue={"  ..."} />
-                <Label>Repita sua senha</Label>
-                <Input defaultValue={"  ..."} />
+                <Label >crie uma senha </Label>
+                <Input onChangeText={(e)=> senhaRef.current.value = e} ref={senhaRef} defaultValue={"  ..."} />
             </MinhasCulturasContainer> : ""}
             <Bottom>
                 {passo==="nome"?<BackButton  onPress={()=>{navigation.goBack()}}><FontAwesomeIcon size={50}  icon={faCircleArrowLeft}/></BackButton>:""}
@@ -46,7 +52,7 @@ export const Cadastro = ({navigation}) => {
                 {passo==="email"?<InicialBottom onPress={()=>{setPasso("senha")}}>
                     <TextBottom>inserir senha</TextBottom>
                 </InicialBottom>:""}
-                {passo==="senha"?<InicialBottom onPress={()=>{alert("cadastrar")}}>
+                {passo==="senha"?<InicialBottom onPress={()=>{cadastrar()}}>
                     <TextBottom>enviar cadastro</TextBottom>
                 </InicialBottom>:""}
             </Bottom>
