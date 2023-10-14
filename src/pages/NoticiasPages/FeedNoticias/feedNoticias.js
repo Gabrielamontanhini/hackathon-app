@@ -12,7 +12,6 @@ export default function FeedNoticias({ navigation }) {
                 keyExtractor={(noticia) => String(noticia.id)}
                 showsVerticalScrollIndicator={false}
                 renderItem={({ item }) => <Notice data={item}/>} />
-            <Button title="Área do Agricultor" onPress={() => navigation.navigate('areadoagricultor')} />
         </StyledSafeArea>
     )
 }
