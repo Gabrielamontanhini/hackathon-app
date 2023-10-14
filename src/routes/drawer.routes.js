@@ -1,11 +1,9 @@
 import { createDrawerNavigator } from '@react-navigation/drawer'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import FeedNoticias from '../pages/NoticiasPages/FeedNoticias/feedNoticias';
-import Capacitacao from '../pages/CapacitacaoPages/Capacitacao/capacitacao';
 import Forum from '../pages/ForumPages/Forum/forum';
-import Inicial from '../pages/Inicial/inicial';
 import { AreaDoAgricultorStack } from './stackRoutes/AgricultorStack';
-import { faHome, faPerson, faBook, faMailBulk, faExclamation } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faPerson, faMailBulk, faExclamation } from '@fortawesome/free-solid-svg-icons';
 import { InicialStack } from './stackRoutes/home.stack';
 const Drawer = createDrawerNavigator();
 
@@ -34,14 +32,6 @@ export default function DrawerRoutes() {
                 options={{
                     drawerIcon: ({ size }) => <FontAwesomeIcon icon={faMailBulk} size={size} />,
                     drawerLabel: 'Noticias ABC+'
-                }}
-            />
-            <Drawer.Screen
-                name='capacitação'
-                component={Capacitacao}
-                options={{
-                    drawerIcon: ({ size }) => <FontAwesomeIcon icon={faBook} size={size} />,
-                    drawerLabel: 'Capacitação'
                 }}
             />
             <Drawer.Screen
