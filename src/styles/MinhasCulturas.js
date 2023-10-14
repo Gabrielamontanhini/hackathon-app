@@ -4,7 +4,7 @@ import { colors } from "../constants/colors/colors"
 
 export const MinhasCulturasContainer  = styled.View`
   width: 300px;
-  height: 400px;
+  height: ${(props)=>props.height? props.height: "400px"};
   backgroundColor: ${colors.nonSelectedIcon};
   border: 4px solid ${colors.borderIconColor};
   border-radius: 28px;
@@ -12,6 +12,7 @@ export const MinhasCulturasContainer  = styled.View`
   border-bottom-width: 17px;
   overflow: scroll;
   margin-top:20px;
+  align-items: center;
 `
 
 export const MinhasCulturasTitle = styled.View`

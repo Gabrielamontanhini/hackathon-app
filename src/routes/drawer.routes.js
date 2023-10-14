@@ -6,6 +6,7 @@ import Forum from '../pages/ForumPages/Forum/forum';
 import Inicial from '../pages/Inicial/inicial';
 import { AreaDoAgricultorStack } from './stackRoutes/AgricultorStack';
 import { faHome,faPerson,faBook,faMailBulk,faExclamation } from '@fortawesome/free-solid-svg-icons';
+import { InicialStack } from './stackRoutes/home.stack';
 const Drawer = createDrawerNavigator();
 
 export default function DrawerRoutes(){
@@ -13,7 +14,7 @@ export default function DrawerRoutes(){
         <Drawer.Navigator screenOptions={{title: ''}}>
             <Drawer.Screen 
             name='inicial'
-            component={Inicial}
+            component={InicialStack}
             options={{
                 drawerIcon: ({size}) => <FontAwesomeIcon icon={faHome} size={size}/>,
                 drawerLabel: 'Inicio'
